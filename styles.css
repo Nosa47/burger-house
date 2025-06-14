@@ -2,6 +2,11 @@
     content: "\f3c2";
 }
 
+* {
+  outline: 1px solid red;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -28,7 +33,7 @@ body {
       ),
       url('images/hero-bg-mobile.jpg');
   }
-  
+
 }
 
 .menu-item {
