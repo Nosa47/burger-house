@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House - Premium Handcrafted Burgers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#e65c00',secondary:'#f8b400'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center animation-hero-1">
+            <a href="#" class="font-['Pacifico'] text-3xl text-primary">Burger House</a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-400 hover:text-primary font-medium transition duration-300">Home</a>
+                <a href="#menu" class="text-gray-400 hover:text-primary font-medium transition duration-300">Menu</a>
+                <a href="#about" class="text-gray-400 hover:text-primary font-medium transition duration-300">About</a>
+                <a href="#location" class="text-gray-400 hover:text-primary font-medium transition duration-300">Location</a>
+                <a href="#contact" class="text-gray-400 hover:text-primary font-medium transition duration-300">Contact</a>
+                <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">Order Online</button>
+            </div>
+            
+            <div class="md:hidden flex items-center">
+                <button class="text-primary hover:text-primary focus:outline-none w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section w-full h-screen flex items-center pt-16" data-bg="images/hero-bg.jpg" data-bg-mobile="images/hero-bg-mobile.jpg">
+        <div class="container mx-auto px-6 w-full">
+            <div class="max-w-xl animation-hero-1">
+                <h1 class="text-5xl font-bold leading-tight mb-6" style="color: #D4AF37;">Handcrafted Burgers Made With Passion</h1>
+                <p class="text-xl text-gray-200 mb-8">Experience the perfect blend of premium ingredients, artisanal buns, and signature sauces that create an unforgettable taste sensation.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">View Our Menu</button>
+                    <button class="bg-white text-primary px-8 py-3 !rounded-button font-medium hover:bg-gray-100 transition duration-300 whitespace-nowrap">Book A Table</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="300" style="color: #e65c00;">Today's Special Offers</h2>
+                <p class="text-white max-w-2xl mx-auto">Discover our chef's handpicked selections that combine fresh ingredients with innovative flavors for a truly exceptional dining experience.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10" data-aos="zoom-in" data-aos-delay="400">
+                <div class="rounded-lg shadow-lg overflow-hidden menu-item" style="background-color: #1A1A1A;">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=A%20delicious%20gourmet%20bacon%20cheeseburger%20with%20melted%20cheddar%2C%20crispy%20bacon%20strips%2C%20fresh%20lettuce%2C%20and%20tomato%20on%20a%20brioche%20bun.%20The%20burger%20is%20placed%20on%20a%20wooden%20serving%20board%20with%20a%20small%20side%20of%20golden%20french%20fries.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting%20and%20rich%20colors.&width=600&height=400&seq=burger2&orientation=landscape" alt="Classic Bacon Cheeseburger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold" style="color: #e65c00;">Classic Bacon Cheeseburger</h3>
+                            <span class="text-primary font-bold">$14.99</span>
+                        </div>
+                        <p class="text-white mb-4">Angus beef patty, smoked bacon, aged cheddar, lettuce, tomato, and our signature sauce on a toasted brioche bun.</p>
+                        <button class="w-full bg-primary text-white py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">Add to Order</button>
+                    </div>
+                </div>
+                
+                <div class="rounded-lg shadow-lg overflow-hidden menu-item" style="background-color: #1A1A1A;">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=A%20gourmet%20mushroom%20and%20swiss%20burger%20with%20saut%C3%A9ed%20mushrooms%20and%20melted%20swiss%20cheese%20on%20a%20premium%20beef%20patty.%20The%20burger%20is%20served%20on%20a%20rustic%20wooden%20board%20with%20a%20side%20of%20truffle%20fries.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting%20and%20rich%20colors.&width=600&height=400&seq=burger3&orientation=landscape" alt="Mushroom Swiss Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold" style="color: #e65c00;">Mushroom Swiss Burger</h3>
+                            <span class="text-primary font-bold">$15.99</span>
+                        </div>
+                        <p class="text-white mb-4">Grass-fed beef patty, sautéed wild mushrooms, Swiss cheese, caramelized onions, and truffle aioli on a pretzel bun.</p>
+                        <button class="w-full bg-primary text-white py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">Add to Order</button>
+                    </div>
+                </div>
+                
+                <div class="rounded-lg shadow-lg overflow-hidden menu-item" style="background-color: #1A1A1A;">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=A%20gourmet%20avocado%20chicken%20burger%20with%20grilled%20chicken%20breast%2C%20fresh%20avocado%20slices%2C%20lettuce%2C%20and%20tomato%20on%20a%20whole%20grain%20bun.%20The%20burger%20is%20served%20on%20a%20white%20plate%20with%20a%20side%20of%20sweet%20potato%20fries.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting%20and%20rich%20colors.&width=600&height=400&seq=burger4&orientation=landscape" alt="Avocado Chicken Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-bold" style="color: #e65c00;">Avocado Chicken Burger</h3>
+                            <span class="text-primary font-bold">$16.99</span>
+                        </div>
+                        <p class="text-white mb-4">Grilled herb-marinated chicken breast, fresh avocado, pepper jack cheese, arugula, and chipotle mayo on a multigrain bun.</p>
+                        <button class="w-full bg-primary text-white py-2 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="300" style="color: #e65c00;">Our Menu</h2>
+                <p class="text-white max-w-2xl mx-auto">Explore our diverse selection of handcrafted burgers, sides, and beverages made with the finest ingredients.</p>
+            </div>
+            
+            <div class="flex justify-center mb-10">
+                <div class="inline-flex bg-gray-100 p-1 !rounded-full">
+                    <button class="px-6 py-2 !rounded-full bg-primary text-white font-medium whitespace-nowrap">Burgers</button>
+                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Sides</button>
+                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Drinks</button>
+                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Desserts</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade" data-aos-delay="300">
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20classic%20cheeseburger%20with%20melted%20American%20cheese%2C%20lettuce%2C%20tomato%2C%20and%20pickles%20on%20a%20sesame%20seed%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger5&orientation=squarish" alt="Classic Cheeseburger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">Classic Cheeseburger</h3>
+                            <span class="text-primary font-bold">$12.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">Angus beef patty, American cheese, lettuce, tomato, onion, pickles, and house sauce on a sesame seed bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20BBQ%20bacon%20burger%20with%20crispy%20bacon%20strips%2C%20melted%20cheddar%20cheese%2C%20onion%20rings%2C%20and%20BBQ%20sauce%20on%20a%20brioche%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger6&orientation=squarish" alt="BBQ Bacon Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">BBQ Bacon Burger</h3>
+                            <span class="text-primary font-bold">$15.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">Smoked brisket blend patty, applewood bacon, cheddar, crispy onion strings, and bourbon BBQ sauce on a brioche bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20veggie%20burger%20with%20a%20plant-based%20patty%2C%20avocado%20slices%2C%20sprouts%2C%20tomato%2C%20and%20vegan%20mayo%20on%20a%20whole%20grain%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger7&orientation=squarish" alt="Garden Veggie Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">Garden Veggie Burger</h3>
+                            <span class="text-primary font-bold">$13.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">House-made vegetable and quinoa patty, avocado, sprouts, tomato, cucumber, and herb aioli on a whole grain bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20spicy%20jalape%C3%B1o%20burger%20with%20pepper%20jack%20cheese%2C%20sliced%20jalape%C3%B1os%2C%20lettuce%2C%20and%20chipotle%20mayo%20on%20a%20brioche%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger8&orientation=squarish" alt="Spicy Jalapeño Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">Spicy Jalapeño Burger</h3>
+                            <span class="text-primary font-bold">$14.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">Grass-fed beef patty, pepper jack cheese, fresh jalapeños, crispy jalapeño chips, and chipotle aioli on a brioche bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20blue%20cheese%20burger%20with%20caramelized%20onions%2C%20arugula%2C%20and%20blue%20cheese%20crumbles%20on%20a%20pretzel%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger9&orientation=squarish" alt="Blue Cheese Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">Blue Cheese Burger</h3>
+                            <span class="text-primary font-bold">$16.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">Dry-aged beef patty, blue cheese crumbles, caramelized onions, arugula, and balsamic glaze on a pretzel bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
+                        <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20a%20truffle%20burger%20with%20truffle%20aioli%2C%20saut%C3%A9ed%20mushrooms%2C%20and%20gruy%C3%A8re%20cheese%20on%20a%20brioche%20bun.%20The%20background%20is%20clean%20and%20minimal%20to%20highlight%20the%20food.%20Professional%20food%20photography%20with%20natural%20lighting.&width=200&height=200&seq=burger10&orientation=squarish" alt="Truffle Burger" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="text-lg font-bold" style="color: #e65c00;">Truffle Burger</h3>
+                            <span class="text-primary font-bold">$18.99</span>
+                        </div>
+                        <p class="text-white text-sm mb-3">Wagyu beef patty, black truffle aioli, sautéed wild mushrooms, gruyère cheese, and arugula on a brioche bun.</p>
+                        <button class="text-primary font-medium flex items-center hover:underline">
+                            <span>Add to Order</span>
+                            <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-primary border-2 border-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap">View Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-left" data-aos-delay="300">
+                    <h2 class="text-4xl font-bold mb-4" style="color: #e65c00;">Our Story</h2>
+                    <p class="text-white mb-6">Founded in 2015 by Chef Michael Reynolds, Burger House began with a simple mission: to create the perfect burger using only the finest ingredients sourced from local farms and producers.</p>
+                    <p class="text-white mb-6">What started as a small food truck has grown into one of the city's most beloved burger destinations, known for our commitment to quality, flavor, and exceptional dining experience.</p>
+                    <p class="text-white mb-8">Every burger is handcrafted with care, from our house-ground premium beef blends to our freshly baked artisanal buns and signature sauces made from scratch daily.</p>
+                    <div class="flex items-center">
+                        <img src="https://readdy.ai/api/search-image?query=A%20signature%20handwritten%20in%20black%20ink%20on%20a%20white%20background%2C%20elegant%20and%20professional%20looking.%20The%20signature%20appears%20to%20be%20from%20a%20chef%20or%20restaurant%20owner.%20The%20signature%20is%20clear%20and%20visible%20against%20the%20clean%20background.&width=200&height=80&seq=signature1&orientation=landscape" alt="Chef's Signature" class="h-16">
+                        <div class="ml-4">
+                            <h4 class="font-bold" style="color: #e65c00;">Michael Reynolds</h4>
+                            <p class="text-white text-sm">Executive Chef & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-right" data-aos-delay="500">
+                    <img src="https://readdy.ai/api/search-image?query=A%20professional%20chef%20in%20a%20kitchen%20preparing%20gourmet%20burgers%2C%20focusing%20on%20the%20hands%20carefully%20assembling%20ingredients.%20The%20chef%20is%20wearing%20a%20white%20chef%20coat%20and%20the%20kitchen%20appears%20modern%20and%20clean.%20Professional%20food%20preparation%20photography%20with%20natural%20lighting.&width=400&height=300&seq=chef1&orientation=landscape" alt="Chef Preparing Burger" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=A%20close-up%20of%20fresh%20burger%20ingredients%20including%20premium%20beef%20patties%2C%20artisanal%20cheese%2C%20fresh%20vegetables%2C%20and%20homemade%20sauces%20arranged%20beautifully%20on%20a%20wooden%20surface.%20Professional%20food%20photography%20with%20natural%20lighting%20highlighting%20the%20quality%20and%20freshness%20of%20ingredients.&width=400&height=300&seq=ingredients1&orientation=landscape" alt="Fresh Ingredients" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=A%20modern%2C%20cozy%20restaurant%20interior%20with%20wooden%20tables%2C%20comfortable%20seating%2C%20and%20warm%20lighting.%20The%20atmosphere%20appears%20inviting%20and%20stylish%20with%20some%20subtle%20burger-themed%20decor%20elements.%20Professional%20interior%20photography%20showcasing%20the%20dining%20environment.&width=400&height=300&seq=restaurant1&orientation=landscape" alt="Restaurant Interior" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    <img src="https://readdy.ai/api/search-image?query=A%20grill%20with%20several%20burger%20patties%20cooking%2C%20showing%20flames%20and%20smoke.%20The%20grill%20appears%20professional-grade%20in%20a%20restaurant%20kitchen%20setting.%20Professional%20food%20preparation%20photography%20capturing%20the%20cooking%20process.&width=400&height=300&seq=grill1&orientation=landscape" alt="Grilling Burgers" class="w-full h-64 object-cover rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="300" style="color: #e65c00;">What Our Customers Say</h2>
+                <p class="text-white max-w-2xl mx-auto">Don't just take our word for it. Here's what burger enthusiasts have to say about their dining experience with us.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10" data-aos="zoom-in" data-aos-delay="300">
+                <div class="p-8 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-white mb-6">"The Classic Bacon Cheeseburger was absolutely perfect! Juicy patty, crispy bacon, and that signature sauce... I'm still dreaming about it. Definitely the best burger I've had in years."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4">
+                            <i class="ri-user-3-line ri-lg text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Emily Richardson</h4>
+                            <p class="text-white text-sm">Local Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-8 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-white mb-6">"As a vegetarian, I'm always skeptical of veggie burgers, but the Garden Veggie Burger blew me away. Flavorful, hearty, and doesn't fall apart like most others. The herb aioli is incredible!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4">
+                            <i class="ri-user-3-line ri-lg text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">James Wilson</h4>
+                            <p class="text-white text-sm">Vegetarian Food Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-8 rounded-lg shadow-md" style="background-color: #1A1A1A;">
+                    <div class="flex items-center mb-6">
+                        <div class="text-primary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-white mb-6">"The Truffle Burger is worth every penny. The combination of wagyu beef, truffle aioli, and those amazing mushrooms creates a flavor explosion. The fries are perfectly crispy too!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center mr-4">
+                            <i class="ri-user-3-line ri-lg text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary">Sophia Martinez</h4>
+                            <p class="text-white text-sm">Culinary Arts Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Location Section -->
+    <section id="location" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up" data-aos-delay="300" style="color: #e65c00;">Find Us</h2>
+                <p class="text-white max-w-2xl mx-auto">Visit us to experience our handcrafted burgers in a warm, inviting atmosphere.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="h-96 rounded-lg overflow-hidden shadow-md" data-aos="fade-left" data-aos-delay="300" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;"></div>
+                
+                <div class="p-8 rounded-lg shadow-md" data-aos="fade-right" data-aos-delay="500" style="background-color: #1A1A1A;">
+                    <h3 class="text-2xl font-bold mb-6" style="color: #e65c00;">Burger House Downtown</h3>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+                            <i class="ri-map-pin-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-primary">Address</h4>
+                            <p class="text-white">123 Burger Street, Downtown<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+                            <i class="ri-time-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-primary">Hours</h4>
+                            <p class="text-white">Monday - Thursday: 11:00 AM - 10:00 PM<br>Friday - Saturday: 11:00 AM - 11:00 PM<br>Sunday: 12:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+                            <i class="ri-phone-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-primary">Contact</h4>
+                            <p class="text-white">Phone: (212) 555-1234<br>Email: info@burgerhouse.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 flex items-center justify-center text-primary mr-4">
+                            <i class="ri-car-line ri-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-primary">Parking</h4>
+                            <p class="text-white">Validated parking available at the Downtown Garage on Main Street.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-6 x-6 md:px-16 lg:px-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div data-aos="fade-left" data-aos-delay="300">
+                    <h2 class="text-4xl font-bold mb-6" style="color: #e65c00;">Make a Reservation</h2>
+                    <p class="text-white mb-8">Reserve your table to guarantee a spot at Burger House. For parties of 8 or more, please call us directly.</p>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-primary font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-primary font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Your email">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="date" class="block text-primary font-medium mb-2">Date</label>
+                                <input type="date" id="date" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary">
+                            </div>
+                            <div>
+                                <label for="time" class="block text-primary font-medium mb-2">Time</label>
+                                <input type="time" id="time" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="guests" class="block text-primary font-medium mb-2">Number of Guests</label>
+                            <select id="guests" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary pr-8">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-primary font-medium mb-2">Special Requests</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" placeholder="Any special requests or dietary requirements?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition duration-300 whitespace-nowrap">Book Table</button>
+                    </form>
+                </div>
+                
+                <div class="flex items-center justify-center" data-aos="fade-right" data-aos-delay="500">
+                    <img src="https://readdy.ai/api/search-image?query=A%20beautifully%20plated%20gourmet%20burger%20with%20all%20the%20fixings%20on%20a%20wooden%20serving%20board.%20The%20burger%20is%20accompanied%20by%20golden%20french%20fries%20and%20a%20craft%20beer%20in%20a%20glass.%20The%20setting%20appears%20to%20be%20in%20an%20upscale%20restaurant%20with%20ambient%20lighting.%20Professional%20food%20photography%20with%20rich%20colors%20and%20textures%20highlighting%20the%20premium%20quality%20of%20the%20food.&width=600&height=800&seq=burger11&orientation=portrait" alt="Gourmet Burger Plating" class="rounded-lg shadow-xl max-h-[600px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-6" data-aos="fade-down" data-aos-delay="500">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Join Our Burger Club</h2>
+                <p class="text-white opacity-90 mb-8">Subscribe to our newsletter for exclusive offers, new menu items, and special events.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-1 px-6 py-3 rounded-l-lg border-none focus:outline-none text-gray-800">
+                    <button type="submit" class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition duration-300 whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <a href="#" class="font-['Pacifico'] text-3xl text-white mb-6 inline-block">Burger House</a>
+                    <p class="text-gray-400 mb-6">Handcrafted burgers made with premium ingredients and passion since 2015.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="ri-facebook-fill ri-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="ri-instagram-line ri-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="ri-twitter-x-line ri-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition duration-300">
+                            <i class="ri-yelp-line ri-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-white transition duration-300">Menu</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#location" class="text-gray-400 hover:text-white transition duration-300">Location</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Reservations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="ri-map-pin-line ri-lg mr-3 mt-1 text-primary"></i>
+                            <span class="text-gray-400">123 Burger Street, Downtown<br>New York, NY 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-phone-line ri-lg mr-3 text-primary"></i>
+                            <span class="text-gray-400">(212) 555-1234</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-mail-line ri-lg mr-3 text-primary"></i>
+                            <span class="text-gray-400">info@burgerhouse.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Opening Hours</h4>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Monday - Thursday</span>
+                            <span class="text-gray-400">11:00 AM - 10:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Friday - Saturday</span>
+                            <span class="text-gray-400">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-400">Sunday</span>
+                            <span class="text-gray-400">12:00 PM - 9:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center">
+            <p class="text-gray-500 text-sm">© 2025 Burger House. All rights reserved.</p>
+            <p class="text-gray-500 text-sm mt-2 italic">Powered by passion, built by <span class="text-primary font-medium">dev.nosa</span></p>
+            <div class="flex justify-center mt-4 space-x-6">
+                <i class="ri-visa-line ri-lg text-gray-400"></i>
+                <i class="ri-mastercard-line ri-lg text-gray-400"></i>
+                <i class="ri-paypal-line ri-lg text-gray-400"></i>
+                <i class="ri-apple-fill ri-lg text-gray-400"></i>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- GSAP & ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Your external JavaScript -->
+<script src="js/script.js"></script>
+
+<!-- AOS Animate JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- AOS Init-->
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
