@@ -16,8 +16,6 @@ body {
     url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -30,6 +28,7 @@ body {
       ),
       url('images/hero-bg-mobile.jpg');
   }
+  
 }
 
 .menu-item {

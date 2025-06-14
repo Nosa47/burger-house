@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>tailwind.config={theme:{extend:{colors:{primary:'#e65c00',secondary:'#f8b400'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 overflow-x-hidden antialiased min-h-screen">
     <!-- Navigation -->
     <nav class="shadow-sm fixed w-full z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center animation-hero-1">
@@ -115,13 +115,13 @@
             
             <div class="flex justify-center mb-10">
                 <div class="inline-flex bg-gray-100 p-1 !rounded-full">
-                    <button class="px-6 py-2 !rounded-full bg-primary text-white font-medium whitespace-nowrap">Burgers</button>
-                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Sides</button>
-                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Drinks</button>
-                    <button class="px-6 py-2 !rounded-full text-gray-700 font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Desserts</button>
+                    <button class="px-4 sm:px-6 py-1.5 sm:py-2 !rounded-full bg-primary text-white text-sm sm:text-base font-medium whitespace-nowrap">Burgers</button>
+                    <button class="px-4 sm:px-6 py-1.5 sm:py-2 !rounded-full text-gray-700 text-sm sm:text-base font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Sides</button>
+                    <button class="px-4 sm:px-6 py-1.5 sm:py-2 !rounded-full text-gray-700 text-sm sm:text-base font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Drinks</button>
+                    <button class="px-4 sm:px-6 py-1.5 sm:py-2 !rounded-full text-gray-700 text-sm sm:text-base font-medium hover:bg-gray-200 transition duration-300 whitespace-nowrap">Desserts</button>
                 </div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade" data-aos-delay="300">
                 <div class="flex p-6 rounded-lg shadow-md" style="background-color: #1A1A1A;">
                     <div class="w-24 h-24 flex-shrink-0 overflow-hidden rounded-lg mr-6">
